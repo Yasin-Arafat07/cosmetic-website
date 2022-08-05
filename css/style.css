@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+:root {
+  --color-primary: #aa5363;
+  --color-secondery: #f3c1ca;
+  --nav-color: #442228;
+  --color-dark: #101010;
+  --color-font: #f7eef0;
+  --color-mute: #737373;
+  --transition: all 0.2s linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* =============== Nav Section ===================*/
+#nav-section {
+  width: 100%;
+  background-color: var(--nav-color);
+  z-index: 999;
+}
+#nav-section .nav-section-all {
+  width: 100%;
+  display: flex;
+  padding: 0.6rem 0;
+  justify-content: space-between;
+}
+#nav-section .nav-section-all .nav-section-left .nav-logo {
+  display: flex;
+}
+#nav-section .nav-section-all .nav-section-left .nav-logo h1 {
+  color: var(--color-font);
+  text-transform: uppercase;
+}
+#nav-section .nav-section-all .nav-section-left .nav-logo h1 span {
+  color: var(--color-secondery);
+}
+#nav-section .nav-section-all .nav-section-left .nav-moto {
+  color: var(--color-font);
+}
+#nav-section .nav-section-all .nav-section-right {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+#nav-section .nav-section-all .nav-section-right span {
+  color: var(--color-secondery);
+  margin-right: 3rem;
+}
+#nav-section .nav-section-all .nav-section-right .nav-link a {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  color: var(--color-font);
+  transition: var(--transition);
+}
+#nav-section .nav-section-all .nav-section-right .nav-link a:hover {
+  color: var(--color-primary);
+}
+#nav-section .nav-offer {
+  background-color: var(--color-primary);
+}
+#nav-section .nav-offer p {
+  text-align: center;
+  padding: 0.2rem 0;
+  color: var(--color-font);
+  letter-spacing: 0.2rem;
+}
+#nav-section .nav-offer p span {
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+/* ====================== Body Section =====================*/
+#body-section {
+  width: 100%;
+  height: 100vh;
+  padding: 7rem 0 0;
+  background-image: url(../images/body-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#body-section .body-content {
+  width: 45%;
+  border-radius: 10px;
+  padding: 1rem 1.5rem 2rem 1rem;
+  background-color: rgba(71, 46, 46, 0.2);
+}
+#body-section .body-content span {
+  display: flex;
+  font-size: 2rem;
+  color: var(--color-font);
+  border-bottom: 2px solid var(--color-primary);
+}
+#body-section .body-content h1 {
+  width: 41%;
+  font-size: 6rem;
+  color: var(--color-secondery);
+}
+#body-section .body-content h2 {
+  font-size: 2.5rem;
+  color: var(--color-font);
+}
+#body-section .body-content p {
+  width: 70%;
+  font-weight: 500;
+  color: var(--color-font);
+  margin-top: 1rem;
+  text-align: justify;
+}
+#body-section .body-content .body-btn {
+  margin-top: 4rem;
+}
+#body-section .body-content .body-btn a {
+  color: var(--color-font);
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 2px solid var(--color-primary);
+  transition: var(--transition);
+}
+#body-section .body-content .body-btn a:hover {
+  border: 2px solid var(--nav-color);
+  background-color: var(--color-primary);
+}
+
+/* ==================== Counter Section =================*/
+#counter-section {
+  margin: 8rem 0;
+}
+#counter-section .counter-all {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  padding: 3rem 7rem;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+#counter-section .counter-all .counter {
+  color: var(--color-font);
+}
+#counter-section .counter-all .counter span {
+  font-size: 1.7rem;
+}
+
+/* ================= Collection Section ===================*/
+#collection-section {
+  width: 100%;
+  margin: 5rem 0;
+}
+#collection-section .collection-content-all {
+  display: flex;
+  margin-top: 2.5rem;
+  justify-content: space-between;
+}
+#collection-section .collection-content-all .collection-content {
+  flex-direction: column;
+  display: flex;
+  font-size: 1.2rem;
+}
+#collection-section .collection-content-all .collection-content span {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+#collection-section .collection-content-all .collection-content a {
+  margin-bottom: 0.3rem;
+  color: var(--color-mute);
+  transition: var(--transition);
+}
+#collection-section .collection-content-all .collection-content a:hover {
+  color: var(--nav-color);
+}
+
+/* ======================= About Section ==================*/
+#about-section {
+  width: 100%;
+  position: relative;
+}
+#about-section .about-section-all {
+  width: 100%;
+  position: relative;
+  padding: 15rem 0 10rem;
+}
+#about-section .about-section-all .about-img {
+  position: relative;
+}
+#about-section .about-section-all .about-img img {
+  width: 55%;
+  height: 70rem;
+  top: 100px;
+  border-radius: 0 0 30px 0;
+}
+#about-section .about-section-all .about-img::after {
+  content: "";
+  background-image: url(../images/about-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 55%;
+  height: 50rem;
+  position: absolute;
+  top: -10rem;
+  right: 0;
+  border-radius: 30px 0 0 30px;
+  z-index: 10;
+}
+#about-section .about-section-all .about-content {
+  position: absolute;
+  bottom: 10rem;
+  right: 10rem;
+  width: 30%;
+  text-align: justify;
+}
+#about-section .about-section-all .about-content .about-description {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+#about-section .about-section-all .about-content .about-link {
+  top: 23rem;
+  position: absolute;
+}
+#about-section .about-section-all .about-content .about-link a {
+  padding: 1rem 2.5rem;
+  border: 2px solid var(--color-primary);
+  transition: var(--transition);
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  border-radius: 5px;
+}
+#about-section .about-section-all .about-content .about-link a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-font);
+}
+
+/* ======================== Item Section ==================*/
+#item-section {
+  width: 100%;
+  margin: 5rem 0;
+}
+#item-section .item-section-all {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#item-section .item-section-all .item-card {
+  width: 23%;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px var(--color-secondery);
+}
+#item-section .item-section-all .item-card .item-image img {
+  width: 100%;
+  border-radius: 10px;
+  height: 15rem;
+}
+#item-section .item-section-all .item-card .card-title {
+  margin-top: 1rem;
+}
+#item-section .item-section-all .item-card .card-title h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+#item-section .item-section-all .item-card .card-description p {
+  margin-top: 1rem;
+  text-align: justify;
+  color: var(--color-mute);
+}
+#item-section .item-section-all .item-card .card-link {
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
+#item-section .item-section-all .item-card .card-link a {
+  padding: 0.8rem 2rem;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: var(--transition);
+}
+#item-section .item-section-all .item-card .card-link a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-font);
+}
+
+/* ======================== Contact Section ==================*/
+#contact-section {
+  width: 100%;
+  position: relative;
+  margin: 15rem 0 5rem;
+}
+#contact-section .contact-section-all {
+  width: 100%;
+  position: relative;
+  padding: 10rem 0;
+}
+#contact-section .contact-section-all .contact-img {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+#contact-section .contact-section-all .contact-img img {
+  width: 55%;
+  height: 70rem;
+  border-radius: 0 0 0 30px;
+}
+#contact-section .contact-section-all .contact-img::after {
+  content: "";
+  background-image: url(../images/contact-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 55%;
+  height: 50rem;
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  border-radius: 0 30px 30px 0;
+  z-index: 10;
+}
+#contact-section .contact-section-all .contact-content {
+  position: absolute;
+  bottom: 10rem;
+  left: 10rem;
+  width: 30%;
+  text-align: justify;
+}
+#contact-section .contact-section-all .contact-content .contact-description {
+  font-size: 1.3rem;
+}
+#contact-section .contact-section-all .contact-content .contact-link {
+  top: 20rem;
+  position: absolute;
+}
+#contact-section .contact-section-all .contact-content .contact-link a {
+  padding: 1rem 2.5rem;
+  border: 2px solid var(--color-primary);
+  transition: var(--transition);
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  border-radius: 5px;
+}
+#contact-section .contact-section-all .contact-content .contact-link a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-font);
+}
+
+/* ======================= Sign up Section ====================*/
+#submit-section {
+  width: 100%;
+  margin: 5rem 0 5rem;
+}
+#submit-section .submit-section-all {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 5rem 7rem;
+  border-radius: 10px;
+}
+#submit-section .submit-section-all .submit-title h2 {
+  color: var(--color-font);
+  font-size: 3rem;
+}
+#submit-section .submit-section-all .submit-holder {
+  margin-top: 2rem;
+}
+#submit-section .submit-section-all .submit-holder input[type=email] {
+  width: 20rem;
+  height: 2.5rem;
+  padding: 0.7rem 0 0.7rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+#submit-section .submit-section-all .submit-holder input[type=submit] {
+  width: 7rem;
+  height: 2.7rem;
+  border-radius: 5px;
+  background-color: var(--color-secondery);
+  border: 2px solid var(--nav-color);
+}
+
+/* ================ Footer Section ==================*/
+#footer-section {
+  width: 100%;
+  margin-top: 10rem;
+  padding: 5rem 0;
+  background-color: var(--nav-color);
+}
+#footer-section .footer-all {
+  text-align: center;
+}
+#footer-section .footer-all .footer-title h2 {
+  font-size: 3rem;
+  color: var(--color-font);
+}
+#footer-section .footer-all .footer-title h2 span {
+  color: var(--color-secondery);
+}
+#footer-section .footer-all .footer-description p {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  color: var(--color-font);
+}
+#footer-section .footer-all .footer-link {
+  margin-top: 2rem;
+}
+#footer-section .footer-all .footer-link a {
+  color: var(--color-font);
+  font-size: 1.7rem;
+  margin-left: 0.5rem;
+  transition: var(--transition);
+}
+#footer-section .footer-all .footer-link a:hover {
+  color: var(--color-secondery);
+}
+
+/*# sourceMappingURL=style.css.map */
